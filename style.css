@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-size: 10rem;
+    background: #8af3f9;
+}
+
+.rotate1{
+    position: relative;
+    padding: 20px;
+    color: #f00;
+    transition: transform 1s;
+}
+.rotate1:hover{
+    transform:rotate(360deg) translateZ(0)
+}
+.rotate2{
+    position: relative;
+    padding: 20px;
+    color: #000;
+}
+.rotate2:hover{
+    animation:spin 1s linear infinite;
+    transition:1s;
+}
+@keyframes spin {
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.rotate3{
+    position: relative;
+    padding: 20px;
+    color: grey;
+    transform: transition  2s;
+    animation: spin 1s linear infinite;
+}
